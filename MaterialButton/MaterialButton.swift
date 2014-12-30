@@ -83,7 +83,7 @@ class MaterialCustomView :UIView
     }
     
     init(type: MaterialButtonType) {
-        super.init(frame: CGRect(x: 0.0, y: 0.0, width: 46.0, height: 44.0))
+        super.init(frame: CGRect(x: 0.0, y: 0.0, width: 36.0, height: 44.0))
         
         self.type = type
         
@@ -214,7 +214,7 @@ class MaterialCustomView :UIView
         
         UIView.animateWithDuration(self.duration, animations: { () -> Void in
             var firstViewFrame = CGRect()
-            firstViewFrame.origin.x = CGFloat(Double(self.frame.size.width) - Double(self.firstView.frame.size.width) * 0.6 - 8.0)
+            firstViewFrame.origin.x = CGFloat(Double(self.frame.size.width) - Double(self.firstView.frame.size.width) * 0.6 + 2.0)
             firstViewFrame.origin.y = CGFloat(Double(self.frame.size.height - self.firstView.frame.size.height) / 2 + diff)
             firstViewFrame.size.width = self.firstView.frame.size.width * 0.6
             firstViewFrame.size.height = self.firstView.frame.size.height
@@ -224,7 +224,7 @@ class MaterialCustomView :UIView
             self.secondView.frame = CGRect(x: 0.0, y: CGFloat((self.frame.size.height - self.secondView.frame.size.height) / 2), width: self.secondView.frame.size.width, height: self.secondView.frame.size.height)
             
             var thirdViewFrame = CGRect()
-            thirdViewFrame.origin.x = CGFloat(Double(self.frame.size.width) - Double(self.thirdView.frame.size.width) * 0.6 - 8.0)
+            thirdViewFrame.origin.x = CGFloat(Double(self.frame.size.width) - Double(self.thirdView.frame.size.width) * 0.6 + 2.0)
             thirdViewFrame.origin.y = CGFloat(Double(self.frame.size.height - self.thirdView.frame.size.height) / 2 - diff)
             thirdViewFrame.size.width = self.thirdView.frame.size.width * 0.6
             thirdViewFrame.size.height = self.thirdView.frame.size.height

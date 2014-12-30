@@ -16,11 +16,17 @@ class ViewController: UIViewController, MaterialButtonProtocol {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var materialButton1 =  MaterialButton(type: MaterialButtonType.Cross)
+        var materialButton1 =  MaterialButton(type: MaterialButtonType.ArrowLeft)
         materialButton1.delegate = self
         self.navigationItem.leftBarButtonItem = materialButton1
         
+        var materialButton2 =  MaterialButton(type: MaterialButtonType.ArrowRight)
+        materialButton2.delegate = self
+        self.navigationItem.rightBarButtonItem = materialButton2
+        
         self.debugButton = RippleButton()
+        self.debugButton.setTitle("Ripple Button", forState: UIControlState.Normal)
+        self.debugButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         self.debugButton.backgroundColor = UIColor(red: 240.0 / 255.0, green: 240.0 / 255.0, blue: 240.0 / 255.0, alpha: 1.0)
         self.view.addSubview(self.debugButton)
     }
