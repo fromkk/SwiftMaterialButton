@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		ADC9FE9A1A50ED5F006B0336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9FE991A50ED5F006B0336 /* AppDelegate.swift */; };
 		ADC9FE9C1A50ED5F006B0336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9FE9B1A50ED5F006B0336 /* ViewController.swift */; };
-		ADC9FE9F1A50ED5F006B0336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC9FE9D1A50ED5F006B0336 /* Main.storyboard */; };
 		ADC9FEA11A50ED5F006B0336 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC9FEA01A50ED5F006B0336 /* Images.xcassets */; };
 		ADC9FEA41A50ED5F006B0336 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC9FEA21A50ED5F006B0336 /* LaunchScreen.xib */; };
 		ADC9FEB01A50ED5F006B0336 /* MaterialButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9FEAF1A50ED5F006B0336 /* MaterialButtonTests.swift */; };
+		ADC9FEBA1A50EFBB006B0336 /* RippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9FEB91A50EFBB006B0336 /* RippleButton.swift */; };
+		ADC9FEBC1A51271C006B0336 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9FEBB1A51271C006B0336 /* MaterialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,13 @@
 		ADC9FE981A50ED5F006B0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC9FE991A50ED5F006B0336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC9FE9B1A50ED5F006B0336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADC9FE9E1A50ED5F006B0336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADC9FEA01A50ED5F006B0336 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ADC9FEA31A50ED5F006B0336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ADC9FEA91A50ED5F006B0336 /* MaterialButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC9FEAE1A50ED5F006B0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC9FEAF1A50ED5F006B0336 /* MaterialButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButtonTests.swift; sourceTree = "<group>"; };
+		ADC9FEB91A50EFBB006B0336 /* RippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleButton.swift; sourceTree = "<group>"; };
+		ADC9FEBB1A51271C006B0336 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 			children = (
 				ADC9FE991A50ED5F006B0336 /* AppDelegate.swift */,
 				ADC9FE9B1A50ED5F006B0336 /* ViewController.swift */,
-				ADC9FE9D1A50ED5F006B0336 /* Main.storyboard */,
 				ADC9FEA01A50ED5F006B0336 /* Images.xcassets */,
 				ADC9FEA21A50ED5F006B0336 /* LaunchScreen.xib */,
 				ADC9FE971A50ED5F006B0336 /* Supporting Files */,
+				ADC9FEB91A50EFBB006B0336 /* RippleButton.swift */,
+				ADC9FEBB1A51271C006B0336 /* MaterialButton.swift */,
 			);
 			path = MaterialButton;
 			sourceTree = "<group>";
@@ -192,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC9FE9F1A50ED5F006B0336 /* Main.storyboard in Resources */,
 				ADC9FEA41A50ED5F006B0336 /* LaunchScreen.xib in Resources */,
 				ADC9FEA11A50ED5F006B0336 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC9FEBA1A50EFBB006B0336 /* RippleButton.swift in Sources */,
 				ADC9FE9C1A50ED5F006B0336 /* ViewController.swift in Sources */,
+				ADC9FEBC1A51271C006B0336 /* MaterialButton.swift in Sources */,
 				ADC9FE9A1A50ED5F006B0336 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ADC9FE9D1A50ED5F006B0336 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADC9FE9E1A50ED5F006B0336 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADC9FEA21A50ED5F006B0336 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
