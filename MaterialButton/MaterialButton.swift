@@ -64,6 +64,7 @@ class MaterialCustomView :UIView
     var duration = 0.25
     var delegate :MaterialButtonProtocol?
     var parentView :MaterialButton?
+    var touchRadius = 10.0
     
     private var startPosition :CGPoint!
     var colors :UIColor
@@ -126,7 +127,7 @@ class MaterialCustomView :UIView
         let touch = touches.anyObject() as UITouch
         let point = touch.locationInView(self)
         
-        if ( false == CGPointEqualToPoint(point, self.startPosition) )
+        if ( Double(abs(self.startPosition.x - point.x)) > self.touchRadius || Double(abs(self.startPosition.y - point.y)) > self.touchRadius )
         {
             return;
         }

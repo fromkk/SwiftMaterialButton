@@ -18,6 +18,7 @@ class RippleButton: UIButton
     private var startPosition :CGPoint!
     private var rippleView :UIView?
     var delegate :RippleButtonDelegate?
+    var touchRadius = 10.0
     
     override init() {
         super.init()
@@ -63,7 +64,7 @@ class RippleButton: UIButton
         let touch = touches.anyObject() as UITouch
         let point = touch.locationInView(self)
         
-        if ( false == CGPointEqualToPoint(point, self.startPosition) )
+        if ( Double(abs(self.startPosition.x - point.x)) > self.touchRadius || Double(abs(self.startPosition.y - point.y)) > self.touchRadius )
         {
             return;
         }
